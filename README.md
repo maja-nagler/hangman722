@@ -26,13 +26,13 @@ The interactive script requires input of letters and adaptation of list of words
 
 The project is organized with the following file structure:
 project-root/
-│
-├── ask_for_input.py
-├── check_guess_function.py
-├── milestone_5.py
+├── hangman/
+│ ├── ask_for_input.py
+│ ├── check_guess_function.py
+│ ├── milestone_5.py
+│ ├── other_files/
 ├── README.md
 ├── .gitignore
-└── other_files/
 └── ...
 
 ## License
