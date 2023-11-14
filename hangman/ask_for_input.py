@@ -10,16 +10,20 @@ def ask_for_input():
 # Step 4:
 # Outside the function, call the ask_for_input function to test your code.
 
-
-
-    while condition == True:
+    while True:
 
         guess = input("Please enter a single letter:")
 
-        if len(guess) != 1 and isalpha(guess) == True:
-
-            break
-        else:
+        if len(guess) != 1 or guess.isalpha() == False:
             print("Invalid letter. Please, enter a single alphabetical character.")
+        
+        elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
 
-    check_guess()
+        else:
+            check_guess(guess)
+            break
+    
+ask_for_input()
+
+
